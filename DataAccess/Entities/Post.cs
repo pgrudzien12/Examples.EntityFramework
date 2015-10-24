@@ -10,7 +10,7 @@ namespace DataAccess.Entities
     {
         public Post()
         {
-            
+            Comments = new List<Comment>();
         }
 
         public int Id { get; set; }
@@ -21,5 +21,7 @@ namespace DataAccess.Entities
 
         public virtual DateTime CreationDate { get; set; }
         public virtual DateTime ModificationDate { get; set; }
+
+        public virtual List<Comment> Comments{ get; set; }
     }
 }

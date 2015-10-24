@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using DataAccess.Entities;
 
 namespace WebApplication.DataAccess.Models
 {
@@ -15,5 +16,9 @@ namespace WebApplication.DataAccess.Models
             : base(nameOrConnectionString)
         {
         }
+
+        public DbSet<User> Users{ get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
