@@ -7,8 +7,8 @@
     <ProjectGuid>{8FB65195-66B9-49D8-A3F2-4CB7937FD6F2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess</RootNamespace>
-    <AssemblyName>DataAccess</AssemblyName>
+    <RootNamespace>WebApplication.DataAccess</RootNamespace>
+    <AssemblyName>WebApplication.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

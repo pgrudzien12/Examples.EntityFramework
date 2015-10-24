@@ -2,7 +2,7 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace WebApplication3.Models
+namespace WebApplication.DataAccess.Models
 {
     public class ApplicationDbContext : DbContext
     {

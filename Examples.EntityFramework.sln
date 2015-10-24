@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication3", "WebApplication3\WebApplication3.csproj", "{D4506124-54DD-40AA-A8E9-D01FFFEBC274}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Mvc5", "WebApplication.Mvc5\WebApplication.Mvc5.csproj", "{D4506124-54DD-40AA-A8E9-D01FFFEBC274}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{8FB65195-66B9-49D8-A3F2-4CB7937FD6F2}"
 EndProject

@@ -1,8 +1,8 @@
 ﻿using System.Configuration;
 using Owin;
-using WebApplication3.Models;
+using WebApplication.DataAccess.Models;
 
-namespace WebApplication3
+namespace WebApplication.Mvc5
 {
     public partial class Startup
     {
