@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 using Owin;
-using WebApplication.DataAccess.Models;
+using WebApplication.DataAccess;
 
 namespace WebApplication.Mvc5
 {
@@ -10,7 +10,7 @@ namespace WebApplication.Mvc5
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            app.CreatePerOwinContext(() => new ApplicationDbContext(ConfigurationManager.ConnectionStrings[0].ConnectionString));
+            app.CreatePerOwinContext(() => ApplicationDbContext.Create(ConfigurationManager.ConnectionStrings[0].ConnectionString));
         }
     }
 }

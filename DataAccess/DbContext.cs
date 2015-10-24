@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using DataAccess.Entities;
+using WebApplication.DataAccess.Entities;
 
-namespace WebApplication.DataAccess.Models
+namespace WebApplication.DataAccess
 {
     public class ApplicationDbContext : DbContext
     {
@@ -12,9 +12,14 @@ namespace WebApplication.DataAccess.Models
         {
         }
 
-        public ApplicationDbContext(string nameOrConnectionString)
+        private ApplicationDbContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
         {
+        }
+
+        public static ApplicationDbContext Create(string nameOrConnectionString)
+        {
+            return new ApplicationDbContext(nameOrConnectionString);
         }
 
         public DbSet<User> Users{ get; set; }

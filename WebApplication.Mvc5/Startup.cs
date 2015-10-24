@@ -10,5 +10,6 @@ namespace WebApplication.Mvc5
         {
             ConfigureAuth(app);
         }
+        
     }
 }
