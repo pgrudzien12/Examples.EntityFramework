@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using WebApplication.DataAccess;
 
 namespace WebApplication.Mvc6.Controllers
 {
     public class HomeController : Controller
     {
+        private IPostRepository postRepository;
+
+        public HomeController(IPostRepository postRepository)
+        {
+            this.postRepository = postRepository;
+        }
+
         public IActionResult Index()
         {
             return View();

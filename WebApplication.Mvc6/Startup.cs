@@ -5,6 +5,7 @@ using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
+using WebApplication.DataAccess;
 
 namespace WebApplication.Mvc6
 {
@@ -28,6 +29,9 @@ namespace WebApplication.Mvc6
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IPostRepository, SqlPostRepository>();
+            services.AddScoped((_) => ApplicationDbContext.Create(Configuration["Data:DefaultConnection:ConnectionString"]));
+
             // Add Entity Framework services to the services container.
             //services.AddEntityFramework()
             //    .AddSqlServer()
